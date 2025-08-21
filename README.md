@@ -1,30 +1,39 @@
-# Mindmap landing page
+# MindMap Analogy Explorer
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+An interactive web app for generating vivid analogies using mind maps, built with Next.js, TypeScript, Tailwind CSS, and React Flow. Users can input a concept and audience, and the app generates creative analogies using the Gemini API.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/joshhuus-projects/v0-mindmap-landing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/dmnJTaAS7On)
+## Features
 
-## Overview
+- **Generate analogies**: Enter a concept and audience to get 5 creative analogies tailored to your needs.
+- **Mind map visualization**: Explore analogies visually using an interactive mind map powered by React Flow.
+- **Modern UI**: Built with reusable components, theming, and responsive design.
+- **API integration**: Uses Google Gemini API for analogy generation.
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Tech Stack
 
-## Deployment
+- [Next.js](https://nextjs.org/) (App Router)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Flow](https://reactflow.dev/) (for mind map visualization)
+- [Framer Motion](https://www.framer.com/motion/) (animations)
+- [Lucide React](https://lucide.dev/) (icons)
 
-Your project is live at:
+## Getting Started
 
-**[https://vercel.com/joshhuus-projects/v0-mindmap-landing-page](https://vercel.com/joshhuus-projects/v0-mindmap-landing-page)**
+### Prerequisites
 
-## Build your app
+- Node.js 18+
+- pnpm (recommended), npm, or yarn
 
-Continue building your app on:
+## Project Structure
 
-**[https://v0.dev/chat/projects/dmnJTaAS7On](https://v0.dev/chat/projects/dmnJTaAS7On)**
+- `app/` - Next.js app directory (routing, layout, API route)
+	- `page.tsx` - Main landing page UI and logic
+	- `layout.tsx` - App layout and theming
+	- `api/generate/route.ts` - API route for analogy generation
+- `components/` - UI components and theme provider
+- `hooks/` - Custom React hooks
+- `lib/` - Utility functions
+- `public/` - Static assets
+- `styles/` - Global styles
 
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
